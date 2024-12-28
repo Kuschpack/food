@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link-Auswahl</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e9f7e1, #d4eac8);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            text-align: center;
+            background: linear-gradient(135deg, #ffffff, #e4f3df);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 2;
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #2e7d32;
+            font-size: 2rem;
+        }
+        .link-list {
+            list-style: none;
+            padding: 0;
+        }
+        .link-list li {
+            margin: 30px 0;
+        }
+        .link-list a {
+            text-decoration: none;
+            color: #388e3c;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: 2px solid #388e3c;
+            border-radius: 25px;
+            background: #e8f5e9;
+            transition: all 0.3s ease;
+        }
+        .link-list a:hover {
+            color: #ffffff;
+            background: #388e3c;
+            border-color: #2e7d32;
+        }
+        .background-shapes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(56, 142, 60, 0.3);
+            animation: float 10s infinite ease-in-out;
+        }
+        .shape:nth-child(1) {
+            width: 200px;
+            height: 200px;
+            top: -50px;
+            left: -50px;
+        }
+        .shape:nth-child(2) {
+            width: 300px;
+            height: 300px;
+            bottom: -150px;
+            right: -150px;
+        }
+        .shape:nth-child(3) {
+            width: 150px;
+            height: 150px;
+            bottom: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <div class="container">
+        <h1>Hier ein paar Ideen!</h1>
+        <ul class="link-list">
+            <li>
+                <a href="https://www.veganhouse-dresden.de/" target="_blank">Vegan House Dresden</a>
+            </li>
+            <li>
+                <a href="https://www.brennnessel-dresden.de/" target="_blank">Brennnessel Dresden</a>
+            </li>
+            <li>
+                <a href="https://falscher-hase.com/" target="_blank">Falscher Hase</a>
+            </li>
+            <li>
+                <a href="https://www.lilasosse.de/" target="_blank">Lila Soße</a>
+            </li>
+            <li>
+                <a href="https://www.steffenhagen-dd.de/" target="_blank">Steffenhagen Dresden</a>
+            </li>
+            <li>
+                <a href="https://www.der-dicke-schmidt.de/" target="_blank">Der dicke Schmidt</a>
+            </li>
+            <li>
+                <a href="https://ladencafe.de/" target="_blank">Ladencafé</a>
+            </li>
+            <li>
+                <a href="https://www.sproutfood.de/" target="_blank">Sprout Food</a>
+            </li>
+            <li>
+                <a href="https://dresden.wilma-wunder.de/" target="_blank">Wilma Wunder Dresden</a>
+            </li>
+            <li>
+                <a href="https://veggihaus.megasoft-tech.com/?ved=2ahUKEwjAl5nX88qKAxVAnf0HHa0OKt04ChCBT3oECCgQBA" target="_blank">Veggihaus</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
